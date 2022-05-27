@@ -1,4 +1,5 @@
 FROM golang:latest
+ENV GO111MODULE=auto
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
