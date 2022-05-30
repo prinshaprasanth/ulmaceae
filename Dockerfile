@@ -3,7 +3,7 @@ RUN go mod init
 COPY go.mod .
 COPY go.sum .
 RUN go mod download
-ENV GO111MODULE=off
+ENV GO111MODULE=on
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
